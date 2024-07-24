@@ -16,14 +16,13 @@ Programmed by Aladdin Persson
 * 2022-12-19: Small revision of code, checked that it works with latest PyTorch version
 """
 
-import torch
-import numpy as np
+
 
 # ================================================================= #
 #                        Initializing Tensor                        #
 # ================================================================= #
 
-device = "cuda" if torch.cuda.is_available() else "cpu"  # Cuda to run on GPU!
+
 
 # Initializing a Tensor in this case of shape 2x3 (2 rows, 3 columns)
 my_tensor = torch.tensor(
